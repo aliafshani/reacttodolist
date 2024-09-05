@@ -18,11 +18,12 @@ const TodoMainApp = () => {
   };
 
   return (
-    <div className="todoMainApp">
-      <h1>Todo</h1>
+    <div className="todoMainApp w-screen justify-center align-middle mt-24">
+      <h1 className="my-8">Todo</h1>
       <Header setDataApp={setDataApp} />
       {dataApp.map((item) => (
         <Todo
+          className="ml-9"
           key={item.id}
           item={item}
           finishItem={finishItem}

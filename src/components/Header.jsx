@@ -25,8 +25,13 @@ const Header = ({ setDataApp }) => {
   return (
     <div className="header">
       <form onSubmit={submitHandler} action="">
-        <input onChange={onChangeHandler} value={title} type="text" />
-        <button>add</button>
+        <input
+          className=""
+          onChange={onChangeHandler}
+          value={title}
+          type="text"
+        />
+        <button className="px-3">add</button>
       </form>
     </div>
   );
