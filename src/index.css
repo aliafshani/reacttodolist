@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  height: 100dvh;
+  background-color: unset;
+}
 .navbar {
   width: 100%;
   height: 60px;
@@ -29,11 +33,7 @@
   font-style: normal;
   color: rgb(19, 19, 19);
 }
-.body {
-  padding-inline: 5%;
-  align-items: top;
-  height: 100%;
-}
+
 .todoMainApp {
   flex-direction: column;
   display: flex;

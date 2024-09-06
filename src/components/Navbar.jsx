@@ -5,22 +5,24 @@ import { MoonNav } from "./MoonNav";
 import SunNav from "./SunNav";
 
 export const Navbar = () => {
-  const { dark, darkModeHandler } = useContext(Context);
-  console.log(dark);
+  const { theme, toggleTheme } = useContext(Context);
 
   return (
-    <nav className="navbar shadow-2xl bg-violet-950">
+    <nav className="navbar shadow-2xl bg-sky-700 dark:bg-violet-950">
       <ul>
         <li
           className="cursor-pointer text-white"
-          onClick={() => darkModeHandler()}
+          onClick={() => {
+            toggleTheme();
+            console.log(theme);
+          }}
         >
-          {dark ? <SunNav /> : <MoonNav />}
+          {theme === "dark" ? <SunNav /> : <MoonNav />}
         </li>
         <li>
           <NavLink
             className={
-              " bg-pink-600 active:bg-pink-700 focus:outline-none focus:ring focus:ring-violet-300 "
+              "focus:underline  hover:text-sky-300 transition ease-in-out delay-300 font-normal"
             }
             to={"/"}
           >
@@ -30,7 +32,7 @@ export const Navbar = () => {
         <li>
           <NavLink
             className={
-              " bg-pink-600 active:bg-pink-700 focus:outline-none focus:ring focus:ring-violet-300 "
+              "focus:underline  hover:text-sky-300 transition ease-in-out delay-300 font-normal"
             }
             to={"/todo"}
           >
@@ -40,7 +42,7 @@ export const Navbar = () => {
         <li>
           <NavLink
             className={
-              " bg-pink-600 active:bg-pink-700 focus:outline-none focus:ring focus:ring-violet-300 "
+              " focus:underline hover:text-sky-300 transition ease-in-out delay-300  font-normal"
             }
             to={"profiles"}
           >
@@ -50,7 +52,7 @@ export const Navbar = () => {
         <li>
           <NavLink
             className={
-              " bg-pink-600 active:bg-pink-700 focus:outline-none focus:ring focus:ring-violet-300 "
+              "focus:underline  hover:text-sky-300 transition ease-in-out delay-300 font-normal "
             }
             to={"about-us"}
           >

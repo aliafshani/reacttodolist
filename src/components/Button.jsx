@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({ children }) => {
+const Button = ({ children, style, dir }) => {
   return (
-    <Link to={"/profiles"} className="px-4 bg-emerald-700 rounded-lg py-2">
+    <Link to={`${dir}`} className={`${style}`}>
       {children}
     </Link>
   );

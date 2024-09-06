@@ -5,13 +5,12 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import Button from "../components/Button";
 
 const AboutThis = () => {
   return (
     <>
-      <div className=" flex flex-col-reverse sm:flex-row justify-evenly pt-28 line-clamp-5 text-violet-50 text-right font-sans">
+      <div className=" flex flex-col-reverse sm:flex-row justify-evenly pt-28 line-clamp-5 dark:text-violet-50 text-violet-950 text-right font-sans">
         <div className="">
           <h1 className="text-4xl mt-12 sm:mt-3 text-center sm:text-right ">
             من علی افشانی هستم.
@@ -70,11 +69,17 @@ const AboutThis = () => {
           />
         </div>
       </div>
-      <div className="text-center mt-20 text-white">
+      <div className="text-center mt-20 dark:text-violet-50 text-violet-950">
         <h2 className="text-3xl mb-12">شروع every Todo</h2>
-        <Button className="mt-12">شروع</Button>
+        <Button
+          dir={"/"}
+          style={"px-4 bg-emerald-700 rounded-lg py-2"}
+          className="mt-12"
+        >
+          شروع
+        </Button>
       </div>
-      <div className="flex flex-col pt-28 line-clamp-5 align-middle text-violet-50  text-right font-sans">
+      <div className="flex flex-col pt-28 line-clamp-5 align-middle dark:text-violet-50 text-violet-950 text-right font-sans">
         <div className="text-center h-10">
           <h1 className="text-3xl">راه های ارتباطی با من </h1>
         </div>
@@ -89,13 +94,13 @@ const AboutThis = () => {
             <FaInstagram className="text-rose-600 text-6xl" />
           </a>
           <a className="logos" href="https://github.com/aliafshani">
-            <FaGithub className="text-white text-6xl" />
+            <FaGithub className="dark:text-white text-black text-6xl" />
           </a>
           <a
             className="logos"
             href="https://www.linkedin.com/in/ali-afshani-a2628b249/"
           >
-            <FaLinkedin className="text-white text-6xl" />
+            <FaLinkedin className="dark:text-white text-blue-800 text-6xl" />
           </a>
         </div>
       </div>

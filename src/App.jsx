@@ -12,7 +12,7 @@ import { AppContext } from "./contexs/AppContext";
 function App() {
   return (
     <AppContext>
-      <div className="body roboto-medium bg-indigo-950">
+      <div className="h-100 roboto-medium bg-sky-200 dark:bg-indigo-950">
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="profiles" element={<ShowProfileUsers />} />
