@@ -34,9 +34,9 @@ export const Navbar = () => {
             className={
               "focus:underline  hover:text-sky-300 transition ease-in-out delay-300 font-normal"
             }
-            to={"/todo"}
+            to={"/clans"}
           >
-            تودو لیست
+            قبیله ها
           </NavLink>
         </li>
         <li>

@@ -2,8 +2,8 @@ import React from "react";
 import Todo from "../components/Todo";
 import TodoMainApp from "../components/TodoMainApp";
 
-const TodoApp = () => {
+const Wars = () => {
   return <TodoMainApp />;
 };
 
-export default TodoApp;
+export default Wars;
